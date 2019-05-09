@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  attr_accessor :remember_token
+
+
   def new
   	@user = User.new
   end
